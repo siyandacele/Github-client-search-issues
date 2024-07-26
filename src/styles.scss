@@ -1,1 +1,236 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap');
+
+// Variables
+$base-unit: 8px;
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --app-container: #f3f6fd;
+  --main-color: #1f1c2e;
+  --secondary-color: #4a4a4a;
+  --link-color: #1f1c2e;
+  --link-color-hover: #c3cff4;
+  --link-color-active: #fff;
+  --link-color-active-bg: #1f1c2e;
+  --projects-section: #fff;
+  --message-box-hover: #fafcff;
+  --message-box-border: #e9ebf0;
+  --more-list-bg: #fff;
+  --more-list-bg-hover: #f6fbff;
+  --more-list-shadow: rgba(209, 209, 209, 0.4);
+  --button-bg: #1f1c24;
+  --search-area-bg: #fff;
+  --star: #1ff1c2e;
+  --message-btn: #fff;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--app-container);
+}
+
+.app {
+  &-content {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    padding: 16px 24px 24px 0;
+  }
+
+  &-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px $base-unit * 2;
+    // position: fixed;
+    background-color: var(--search-area-bg);
+    border-bottom: #e2e2e2 solid 2px;
+    // margin-bottom: $base-unit * 4;
+
+    &-search {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      & button {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &-icon {
+    width: 26px;
+    height: 2px;
+    border-radius: 4px;
+    background-color: var(--main-color);
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 2px;
+      border-radius: 4px;
+      background-color: var(--main-color);
+      left: 50%;
+      transform: translatex(-50%);
+    }
+
+    &:before {
+      top: -6px;
+    }
+    &:after {
+      bottom: -6px;
+    }
+  }
+
+  &-name {
+    display: inline-block;
+    color: var(--main-color);
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 0 $base-unit $base-unit * 2;
+  }
+}
+
+.search-input {
+  flex-grow: 1;
+  background-color: var(--search-area-bg);
+  border-radius: $base-unit;
+  font-size: 0.8rem;
+}
+
+.app-body-wrapper {
+  height: 110vh;
+  background-color: var(--projects-section);
+  border-radius: $base-unit * 5;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+// App Section
+.app-section {
+  padding: $base-unit * 6 $base-unit * 2;
+  &--header {
+    margin-bottom: $base-unit;
+  }
+  &__heading {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  &__header-results {
+    text-align: right;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  &-wrapper {
+    background-color: #fff;
+    padding: $base-unit * 2;
+    border-radius: $base-unit * 2;
+  }
+}
+.app-card {
+  margin-bottom: $base-unit * 2;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    padding-bottom: $base-unit;
+
+    & a {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #161616;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__content {
+    font-size: 0.76rem;
+    font-weight: 400;
+    color: #161616;
+  }
+  &-footer {
+    padding: $base-unit * 2;
+  }
+
+  &-footer__items {
+    margin: 0;
+    padding: 0;
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+
+  &-footer__item {
+    float: left;
+    vertical-align: middle;
+    padding-right: $base-unit + 4;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #5d5d5e;
+
+    & .mat-icon {
+      vertical-align: middle;
+      width: $base-unit * 2;
+      height: $base-unit * 2.2;
+      font-size: $base-unit * 2;
+      margin: 0;
+      margin-right: $base-unit / 2;
+    }
+  }
+
+  &-footer__item:first-of-type {
+    list-style-type: none;
+    padding: 0;
+    padding-right: $base-unit + 6;
+  }
+}
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (min-width: 600px) {
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width: 801px) {
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width: 1025px) {
+}
+
+/* hi-res laptops and desktops */
+@media (min-width: 1281px) {
+  .app {
+    &-header {
+      padding: 16px $base-unit * 10;
+    }
+  }
+
+  .app-section {
+    padding: $base-unit * 6 $base-unit * 10;
+  }
+}
