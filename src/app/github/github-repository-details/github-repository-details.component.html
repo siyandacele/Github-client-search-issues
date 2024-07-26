@@ -1,1 +1,28 @@
-<p>github-repository-details works!</p>
+<div class="row">
+  <div class="col app-section">
+    <div class="row app-section--header">
+      <div class="col-6">
+        <span class="app-section__heading"
+          ><button
+            mat-icon-button
+            aria-label="Example icon button with a vertical three dot icon"
+          >
+            <mat-icon>keyboard_arrow_left</mat-icon></button
+          >bootstrap
+        </span>
+      </div>
+      <div class="col-6">
+        <mat-chip-set aria-label="Fish selection" class="app-section__header-chip">
+          <mat-chip>Watch: 6000</mat-chip>
+          <mat-chip>Fork: 78.5K</mat-chip>
+          <mat-chip>Star: 343K</mat-chip>
+          <mat-chip>Open Issues: 3435</mat-chip>
+        </mat-chip-set>
+      </div>
+    </div>
+
+    <div class="app-section-wrapper">
+      <cci-github-repository-issues></cci-github-repository-issues>
+    </div>
+  </div>
+</div>

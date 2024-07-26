@@ -1,1 +1,86 @@
-<p>github-repository-issues works!</p>
+<div class="row">
+  <div class="col col-lg-8 app-section-wrapper--inner">
+    <div class="row">
+      <!-- Start Github Repository Desc-->
+      <div class="col-12">
+        <div class="app-section__desc">
+          <p>
+            The most popular HTML, CSS, and JavaScript framework for developing
+            responsive, mobile first projects on the web.
+          </p>
+          <a
+            mat-flat-button
+            href="https://github.com/Competitive-Capabilities-International/client-applications-assessments/blob/master/pd-angular-test.md"
+            target="_blank"
+            >View on GitHub</a
+          >
+        </div>
+      </div>
+
+      <!-- End Github Repository Desc-->
+
+      <div class="row app-section--header">
+        <div class="col app-section__heading">
+          Issues <mat-chip class="app-section__heading-chip">200k, issues</mat-chip>
+        </div>
+        <div class="col app-section--filter">
+          <mat-button-toggle-group name="fontStyle" value="all">
+            <mat-button-toggle value="all">All</mat-button-toggle>
+            <mat-button-toggle value="open">Open</mat-button-toggle>
+            <mat-button-toggle value="close">Close</mat-button-toggle>
+          </mat-button-toggle-group>
+        </div>
+      </div>
+
+      <div class="col-12 app-section-issues">
+        <mat-card class="app-card" appearance="outlined">
+          <mat-card-header>
+            <mat-card-title class="app-card__title"
+              ><a href="#">twbs/bootstrap</a></mat-card-title
+            >
+          </mat-card-header>
+          <mat-card-content class="app-card__markdown-content">
+            <markdown class="app-card__markdown" [data]="data" [disableSanitizer]="true">
+            </markdown>
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="app-card" appearance="outlined">
+          <mat-card-header>
+            <mat-card-title class="app-card__title"
+              ><a href="#">twbs/bootstrap</a></mat-card-title
+            >
+          </mat-card-header>
+          <mat-card-content class="app-card__markdown-content">
+            <markdown class="app-card__markdown" [data]="data" [disableSanitizer]="true">
+            </markdown>
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="app-card" appearance="outlined">
+          <mat-card-header>
+            <mat-card-title class="app-card__title"
+              ><a href="#">twbs/bootstrap</a></mat-card-title
+            >
+          </mat-card-header>
+          <mat-card-content class="app-card__markdown-content">
+            <markdown class="app-card__markdown" [data]="data" [disableSanitizer]="true">
+            </markdown>
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="app-card" appearance="outlined">
+          <mat-card-header>
+            <mat-card-title class="app-card__title"
+              ><a href="#">twbs/bootstrap</a></mat-card-title
+            >
+          </mat-card-header>
+          <mat-card-content class="app-card__markdown-content">
+            <markdown class="app-card__markdown" [data]="data" [disableSanitizer]="true">
+            </markdown>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  <div class="col col-lg-4">
+    <cci-github-repository-chart></cci-github-repository-chart>
+  </div>
+</div>
