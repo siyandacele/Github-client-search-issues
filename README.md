@@ -1,6 +1,8 @@
 # Github Repository Search and view list of issues
 
-Tried out `@ngrx/signals` for the first time and it is a show up project
+Tried out `@ngrx/signals` for the first time and it is a show up project.
+
+Run `npm i` and `ng serve` to view it.
 
 ## Use cases:
 
