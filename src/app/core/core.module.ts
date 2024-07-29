@@ -5,20 +5,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
-  declarations: [HeaderComponent, NotFoundComponent],
-  imports: [
-    CommonModule,
-    MaterialModule,
-    RouterModule,
-    FormsModule,
-    ReactiveFormsModule,
-  ],
-  exports: [
-    HeaderComponent,
-    MaterialModule,
-    NotFoundComponent
-  ]
+  declarations: [HeaderComponent, NotFoundComponent, LoaderComponent],
+  imports: [CommonModule, MaterialModule, RouterModule, FormsModule, ReactiveFormsModule],
+  exports: [HeaderComponent, MaterialModule, NotFoundComponent, LoaderComponent],
 })
-export class CoreModule { }
+export class CoreModule {}

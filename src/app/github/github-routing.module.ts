@@ -12,12 +12,12 @@ const routes: Routes = [
     component: GithubComponent,
     children: [
       { path: '', redirectTo: '', pathMatch: 'full' },
-      {path:'', component: WelcomeComponent},
-      { path: 'repositories', component: GithubListComponent},
-      { path: 'repository/:repositoryName', component: GithubRepositoryDetailsComponent},
-      { path: '**', component: NotFoundComponent}
-    ]
-  }
+      { path: '', component: WelcomeComponent },
+      { path: 'repositories', component: GithubListComponent },
+      { path: 'repository/:owner/:repo', component: GithubRepositoryDetailsComponent },
+      { path: '**', component: NotFoundComponent },
+    ],
+  },
 ];
 
 @NgModule({

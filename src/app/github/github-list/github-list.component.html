@@ -4,277 +4,51 @@
       <span class="app-section__heading">Repositories</span>
     </div>
     <div class="col-4 app-section__header-results">
-      <p class="paragraph">12 results</p>
+      <p class="paragraph">{{ store.totalCount() | numberShortener }}, results</p>
     </div>
   </div>
 
   <div class="app-section-wrapper">
     <div class="github-repositories">
-      <mat-card class="app-card" appearance="outlined">
-        <mat-card-header>
-          <mat-card-title class="app-card__title"
-            ><a href="#">twbs/bootstrap</a></mat-card-title
-          >
-        </mat-card-header>
-        <mat-card-content>
-          <p class="app-card__content">
-            PLEASE READ THE PROJECT STATUS BELOW. Native AngularJS (Angular) directives
-            for Bootstrap. Smaller footprint (20kB gzipped), no 3rd party JS dependencies
-            (jQuery, bootstrap JS) required. Please read the README.md file before
-            submitting an issue!
-          </p>
-        </mat-card-content>
-        <mat-card-footer class="app-card-footer">
-          <ul class="app-card-footer__items">
-            <li class="app-card-footer__item">JavaScript</li>
-            <li class="app-card-footer__item">
-              <mat-icon aria-hidden="false" aria-label="star" fontIcon="star"></mat-icon
-              >12.7k
-            </li>
-            <li class="app-card-footer__item">Updated on 20 Jun</li>
-          </ul>
-        </mat-card-footer>
-      </mat-card>
-      <mat-card class="app-card" appearance="outlined">
-        <mat-card-header>
-          <mat-card-title class="app-card__title"
-            ><a href="#">twbs/bootstrap</a></mat-card-title
-          >
-        </mat-card-header>
-        <mat-card-content>
-          <p class="app-card__content">
-            PLEASE READ THE PROJECT STATUS BELOW. Native AngularJS (Angular) directives
-            for Bootstrap. Smaller footprint (20kB gzipped), no 3rd party JS dependencies
-            (jQuery, bootstrap JS) required. Please read the README.md file before
-            submitting an issue!
-          </p>
-        </mat-card-content>
-        <mat-card-footer class="app-card-footer">
-          <mat-chip-set aria-label="Chihuahua traits">
-            <mat-chip>charming</mat-chip>
-            <mat-chip>graceful</mat-chip>
-            <mat-chip>sassy</mat-chip>
-          </mat-chip-set>
-          <ul class="app-card-footer__items">
-            <li class="app-card-footer__item">JavaScript</li>
-            <li class="app-card-footer__item">
-              <mat-icon aria-hidden="false" aria-label="star" fontIcon="star"></mat-icon
-              >12.7k
-            </li>
-            <li class="app-card-footer__item">Updated on 20 Jun</li>
-          </ul>
-        </mat-card-footer>
-      </mat-card>
-      <mat-card class="app-card" appearance="outlined">
-        <mat-card-header>
-          <mat-card-title class="app-card__title"
-            ><a href="#">twbs/bootstrap</a></mat-card-title
-          >
-        </mat-card-header>
-        <mat-card-content>
-          <p class="app-card__content">
-            PLEASE READ THE PROJECT STATUS BELOW. Native AngularJS (Angular) directives
-            for Bootstrap. Smaller footprint (20kB gzipped), no 3rd party JS dependencies
-            (jQuery, bootstrap JS) required. Please read the README.md file before
-            submitting an issue!
-          </p>
-        </mat-card-content>
-        <mat-card-footer class="app-card-footer">
-          <mat-chip-set aria-label="Chihuahua traits">
-            <mat-chip>charming</mat-chip>
-            <mat-chip>graceful</mat-chip>
-            <mat-chip>sassy</mat-chip>
-          </mat-chip-set>
-          <ul class="app-card-footer__items">
-            <li class="app-card-footer__item">JavaScript</li>
-            <li class="app-card-footer__item">
-              <mat-icon aria-hidden="false" aria-label="star" fontIcon="star"></mat-icon
-              >12.7k
-            </li>
-            <li class="app-card-footer__item">Updated on 20 Jun</li>
-          </ul>
-        </mat-card-footer>
-      </mat-card>
-      <mat-card class="app-card" appearance="outlined">
-        <mat-card-header>
-          <mat-card-title class="app-card__title"
-            ><a href="#">twbs/bootstrap</a></mat-card-title
-          >
-        </mat-card-header>
-        <mat-card-content>
-          <p class="app-card__content">
-            PLEASE READ THE PROJECT STATUS BELOW. Native AngularJS (Angular) directives
-            for Bootstrap. Smaller footprint (20kB gzipped), no 3rd party JS dependencies
-            (jQuery, bootstrap JS) required. Please read the README.md file before
-            submitting an issue!
-          </p>
-        </mat-card-content>
-        <mat-card-footer class="app-card-footer">
-          <mat-chip-set aria-label="Chihuahua traits">
-            <mat-chip>charming</mat-chip>
-            <mat-chip>graceful</mat-chip>
-            <mat-chip>sassy</mat-chip>
-          </mat-chip-set>
-          <ul class="app-card-footer__items">
-            <li class="app-card-footer__item">JavaScript</li>
-            <li class="app-card-footer__item">
-              <mat-icon aria-hidden="false" aria-label="star" fontIcon="star"></mat-icon
-              >12.7k
-            </li>
-            <li class="app-card-footer__item">Updated on 20 Jun</li>
-          </ul>
-        </mat-card-footer>
-      </mat-card>
-      <mat-card class="app-card" appearance="outlined">
-        <mat-card-header>
-          <mat-card-title class="app-card__title"
-            ><a href="#">twbs/bootstrap</a></mat-card-title
-          >
-        </mat-card-header>
-        <mat-card-content>
-          <p class="app-card__content">
-            PLEASE READ THE PROJECT STATUS BELOW. Native AngularJS (Angular) directives
-            for Bootstrap. Smaller footprint (20kB gzipped), no 3rd party JS dependencies
-            (jQuery, bootstrap JS) required. Please read the README.md file before
-            submitting an issue!
-          </p>
-        </mat-card-content>
-        <mat-card-footer class="app-card-footer">
-          <mat-chip-set aria-label="Chihuahua traits">
-            <mat-chip>charming</mat-chip>
-            <mat-chip>graceful</mat-chip>
-            <mat-chip>sassy</mat-chip>
-          </mat-chip-set>
-          <ul class="app-card-footer__items">
-            <li class="app-card-footer__item">JavaScript</li>
-            <li class="app-card-footer__item">
-              <mat-icon aria-hidden="false" aria-label="star" fontIcon="star"></mat-icon
-              >12.7k
-            </li>
-            <li class="app-card-footer__item">Updated on 20 Jun</li>
-          </ul>
-        </mat-card-footer>
-      </mat-card>
-      <mat-card class="app-card" appearance="outlined">
-        <mat-card-header>
-          <mat-card-title class="app-card__title"
-            ><a href="#">twbs/bootstrap</a></mat-card-title
-          >
-        </mat-card-header>
-        <mat-card-content>
-          <p class="app-card__content">
-            PLEASE READ THE PROJECT STATUS BELOW. Native AngularJS (Angular) directives
-            for Bootstrap. Smaller footprint (20kB gzipped), no 3rd party JS dependencies
-            (jQuery, bootstrap JS) required. Please read the README.md file before
-            submitting an issue!
-          </p>
-        </mat-card-content>
-        <mat-card-footer class="app-card-footer">
-          <mat-chip-set aria-label="Chihuahua traits">
-            <mat-chip>charming</mat-chip>
-            <mat-chip>graceful</mat-chip>
-            <mat-chip>sassy</mat-chip>
-          </mat-chip-set>
-          <ul class="app-card-footer__items">
-            <li class="app-card-footer__item">JavaScript</li>
-            <li class="app-card-footer__item">
-              <mat-icon aria-hidden="false" aria-label="star" fontIcon="star"></mat-icon
-              >12.7k
-            </li>
-            <li class="app-card-footer__item">Updated on 20 Jun</li>
-          </ul>
-        </mat-card-footer>
-      </mat-card>
-      <mat-card class="app-card" appearance="outlined">
-        <mat-card-header>
-          <mat-card-title class="app-card__title"
-            ><a href="#">twbs/bootstrap</a></mat-card-title
-          >
-        </mat-card-header>
-        <mat-card-content>
-          <p class="app-card__content">
-            PLEASE READ THE PROJECT STATUS BELOW. Native AngularJS (Angular) directives
-            for Bootstrap. Smaller footprint (20kB gzipped), no 3rd party JS dependencies
-            (jQuery, bootstrap JS) required. Please read the README.md file before
-            submitting an issue!
-          </p>
-        </mat-card-content>
-        <mat-card-footer class="app-card-footer">
-          <mat-chip-set aria-label="Chihuahua traits">
-            <mat-chip>charming</mat-chip>
-            <mat-chip>graceful</mat-chip>
-            <mat-chip>sassy</mat-chip>
-          </mat-chip-set>
-          <ul class="app-card-footer__items">
-            <li class="app-card-footer__item">JavaScript</li>
-            <li class="app-card-footer__item">
-              <mat-icon aria-hidden="false" aria-label="star" fontIcon="star"></mat-icon
-              >12.7k
-            </li>
-            <li class="app-card-footer__item">Updated on 20 Jun</li>
-          </ul>
-        </mat-card-footer>
-      </mat-card>
-      <mat-card class="app-card" appearance="outlined">
-        <mat-card-header>
-          <mat-card-title class="app-card__title"
-            ><a href="#">twbs/bootstrap</a></mat-card-title
-          >
-        </mat-card-header>
-        <mat-card-content>
-          <p class="app-card__content">
-            PLEASE READ THE PROJECT STATUS BELOW. Native AngularJS (Angular) directives
-            for Bootstrap. Smaller footprint (20kB gzipped), no 3rd party JS dependencies
-            (jQuery, bootstrap JS) required. Please read the README.md file before
-            submitting an issue!
-          </p>
-        </mat-card-content>
-        <mat-card-footer class="app-card-footer">
-          <mat-chip-set aria-label="Chihuahua traits">
-            <mat-chip>charming</mat-chip>
-            <mat-chip>graceful</mat-chip>
-            <mat-chip>sassy</mat-chip>
-          </mat-chip-set>
-          <ul class="app-card-footer__items">
-            <li class="app-card-footer__item">JavaScript</li>
-            <li class="app-card-footer__item">
-              <mat-icon aria-hidden="false" aria-label="star" fontIcon="star"></mat-icon
-              >12.7k
-            </li>
-            <li class="app-card-footer__item">Updated on 20 Jun</li>
-          </ul>
-        </mat-card-footer>
-      </mat-card>
-      <mat-card class="app-card" appearance="outlined">
-        <mat-card-header>
-          <mat-card-title class="app-card__title"
-            ><a href="#">twbs/bootstrap</a></mat-card-title
-          >
-        </mat-card-header>
-        <mat-card-content>
-          <p class="app-card__content">
-            PLEASE READ THE PROJECT STATUS BELOW. Native AngularJS (Angular) directives
-            for Bootstrap. Smaller footprint (20kB gzipped), no 3rd party JS dependencies
-            (jQuery, bootstrap JS) required. Please read the README.md file before
-            submitting an issue!
-          </p>
-        </mat-card-content>
-        <mat-card-footer class="app-card-footer">
-          <mat-chip-set aria-label="Chihuahua traits">
-            <mat-chip>charming</mat-chip>
-            <mat-chip>graceful</mat-chip>
-            <mat-chip>sassy</mat-chip>
-          </mat-chip-set>
-          <ul class="app-card-footer__items">
-            <li class="app-card-footer__item">JavaScript</li>
-            <li class="app-card-footer__item">
-              <mat-icon aria-hidden="false" aria-label="star" fontIcon="star"></mat-icon>
-              12.7k
-            </li>
-            <li class="app-card-footer__item">Updated on 20 Jun</li>
-          </ul>
-        </mat-card-footer>
-      </mat-card>
+      @if (store.isLoading()) {
+        <cci-loader [range]="5"></cci-loader>
+      } @else {
+        @for (repository of store.repositories(); track repository.id) {
+          <mat-card class="app-card" appearance="outlined">
+            <mat-card-header>
+              <mat-card-title class="app-card__title"
+                ><a routerLink="/repository/{{ repository.full_name }}">{{
+                  repository.full_name
+                }}</a></mat-card-title
+              >
+            </mat-card-header>
+            <mat-card-content>
+              <p class="app-card__content">
+                {{ repository.description }}
+              </p>
+            </mat-card-content>
+            <mat-card-footer class="app-card-footer">
+              <ul class="app-card-footer__items">
+                @if (repository.language) {
+                  <li class="app-card-footer__item">{{ repository.language }}</li>
+                }
+
+                <li class="app-card-footer__item">
+                  <mat-icon
+                    aria-hidden="false"
+                    aria-label="star"
+                    fontIcon="star"
+                  ></mat-icon
+                  >{{ repository.stargazers_count | numberShortener }}
+                </li>
+                <li class="app-card-footer__item">
+                  Updated on {{ repository.updated_at | date: 'MMM d' }}
+                </li>
+              </ul>
+            </mat-card-footer>
+          </mat-card>
+        }
+      }
     </div>
   </div>
 </div>

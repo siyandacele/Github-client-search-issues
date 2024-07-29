@@ -10,6 +10,10 @@ import { GithubRepositoryChartComponent } from './components/github-repository-c
 import { BaseChartDirective } from 'ng2-charts';
 import { MarkdownModule } from 'ngx-markdown';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { GithubRepositoriesStore } from './store/github.store';
+import { GithubService } from './services/github.service';
+import { provideHttpClient } from '@angular/common/http';
+import { NumberShortenerPipe } from '../pipes/number-shortener.pipe';
 @NgModule({
   declarations: [
     GithubComponent,
@@ -17,8 +21,10 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
     GithubRepositoryDetailsComponent,
     GithubRepositoryIssuesComponent,
     GithubRepositoryChartComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    NumberShortenerPipe,
   ],
+  providers: [GithubService, GithubRepositoriesStore, provideHttpClient()],
   imports: [
     CommonModule,
     GithubRoutingModule,
