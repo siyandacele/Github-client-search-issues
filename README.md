@@ -1,6 +1,6 @@
 # Github Repository Search and view list of issues
 
-Tryout `@ngrx/signals` for the first time and it is a show up project
+Tried out `@ngrx/signals` for the first time and it is a show up project
 
 ## Use cases:
 
