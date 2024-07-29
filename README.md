@@ -1,3 +1,23 @@
+# Github Repository Search and view list of issues
+
+Tryout `@ngrx/signals` for the first time and it is a show up project
+
+## Use cases:
+
+1. As a User I would like to search GitHub in order to view the available repositories for a given search term
+
+2. As a User I would like to select a particular repository in order to view more details of the selected repository
+
+3. As a user, when viewing a given repository, I should be able to clearly see the URL, description, forks count, stargazers count, open issues count etc
+
+4. As a User I would like to link off to the actual GitHub page where the repository is located in order to view the code in the repository
+
+5. As a User I would like to view a list of all the current issues for a repository in order to view the backlog of issues
+
+6. As a User I would like to filter the list of issues between STATE = ["Open" or "Closed"] in order to look through the filtered list
+
+7. As a User I would like to view a PIE chart that displays the breakdown of issues for the repository (open vs closed) in order to visually see how well built and maintained the repository is
+
 # CciGithubClient
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
